@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>float定位单行三列</title>
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#container{
+			width: 100%;
+		}
+		#content{
+			float: left;
+			width: 60%;
+		}
+		#content1{
+			float: left;
+			width: 50%;
+			background-color: pink;
+		}
+		#content2{
+			float: right;
+			width: 50%;
+			background-color: gray;
+		}
+		#content3{
+			float: right;
+			width: 40%;
+			background-color: yellow;
+		}
+		.clear{
+			clear: both;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="content">
+				<div id="content1">
+					这是第一列
+				</div>
+				<div id="content2">
+					这是第二列
+				</div>
+				<div class="clear"></div>
+				<!-- 用法web标准不建议，但是记住下面元素需要清除浮动 -->
+			</div>
+			<div id="content3">
+				这是第三列
+			</div>
+			<div class="clear"></div>
+		</div>
+	</body>
+</html>

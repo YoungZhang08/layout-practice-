@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>左右分栏</title>
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0; 
+		}
+		body{
+			background-color: gray;
+		}
+		.page_center{
+			width: 800px;
+			margin: 10px auto;
+		}
+		#nav{
+			height: 100px;
+			background-color: yellow;
+		}
+		#container{
+			background-color: pink;
+			/*margin-bottom: 10px;*/
+		}
+		#foot{
+			height: 200px;
+			background-color: blue;
+			clear: both;
+		}
+		#left{
+			background-color: pink;
+			width: 350px;
+			float: left;
+			/*border-bottom: px solid #000;*/
+		}
+		#right{
+			background-color: green;
+			width: 450px;
+			margin-left: 350px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="nav" class="page_center">
+			
+		</div>
+		<div id="container" class="page_center">
+			<div id="left"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+			<div id="right"><br/>主要内容<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+		</div>
+		<div id="foot" class="page_center">	
+		</div>
+	</body>
+</html>

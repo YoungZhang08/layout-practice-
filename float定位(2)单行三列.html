@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>float定位2单行三列布局练习</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding-left: 200px;
+				padding-right: 190px;
+				min-width: 200px;
+			}
+			.content{
+				position: relative;
+				float: left;
+			}
+			#center{
+				width: 100px;
+				background-color: pink;
+			}
+			#left{
+				width: 200px;
+				right: 200px;
+				margin-left: -100px;
+				background-color: yellow;
+			}
+			#right{
+				width: 20%;
+				margin-right: -100px;
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="center" class="content">
+			<h1>这是主要内容</h1>
+		</div>
+		<div id="left" class="content">
+			<h2>这是左侧列表</h2>
+		</div>
+		<div id="right" class="content">
+			<h2>这是右侧列表</h2>
+		</div>
+	</body>
+</html>
